@@ -1,0 +1,33 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/events/:path*",
+      "destination": "/api/server.js"
+    },
+    {
+      "source": "/api/registrations/:path*",
+      "destination": "/api/server.js"
+    },
+    {
+      "source": "/events/:path*",
+      "destination": "/api/server.js"
+    },
+    {
+      "source": "/registrations/:path*",
+      "destination": "/api/server.js"
+    }
+  ],
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    },
+    {
+      "src": "api/server.js",
+      "use": "@vercel/node"
+    }
+  ]
+}
