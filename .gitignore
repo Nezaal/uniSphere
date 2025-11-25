@@ -1,0 +1,14 @@
+# Dependencies
+/backend/node_modules
+/frontend/node_modules
+
+# Build artifacts (common in JS projects)
+/backend/dist
+/frontend/dist
+
+# Editor and OS files
+.DS_Store
+.vscode/
+
+# Environment variables
+.env
