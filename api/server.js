@@ -23,8 +23,8 @@ mongoose.connect(mongoURI)
   .catch((err) => console.log('Error connecting to MongoDB:', err));
 
 // Mount routes under the root path for the Vercel function
-app.use('/events', eventRoutes);
-app.use('/registrations', registrationRoutes);
+app.use('/api/events', eventRoutes);
+app.use('/api/registrations', registrationRoutes);
 
 // Export the Express app as a Vercel handler
 export default app;
