@@ -1,19 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/api/events/:path*",
-      "destination": "/api/server.js"
-    },
-    {
-      "source": "/api/registrations/:path*",
-      "destination": "/api/server.js"
-    },
-    {
-      "source": "/events/:path*",
-      "destination": "/api/server.js"
-    },
-    {
-      "source": "/registrations/:path*",
+      "source": "/api/(.*)",
       "destination": "/api/server.js"
     }
   ],

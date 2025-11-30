@@ -28,3 +28,5 @@ app.use('/api/registrations', registrationRoutes);
 
 // Export the Express app as a Vercel handler
 export default app;
+
+
