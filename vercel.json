@@ -12,10 +12,6 @@
       "config": {
         "distDir": "dist"
       }
-    },
-    {
-      "src": "api/server.js",
-      "use": "@vercel/node"
     }
   ]
 }
