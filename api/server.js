@@ -10,7 +10,7 @@ import registrationRoutes from '../backend/routes/registrations.js';
 const app = express();
 
 // Use environment variables for connection string in production
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/uniSphere';
+const mongoURI = "mongodb+srv://ahmadnezal19:emlh3at6Zj2hwbi1@cluster0.xfdjjho.mongodb.net/?appName=Cluster0";
 
 // Vercel handles the listener, so we remove the app.listen() call.
 // We keep the setup and connection logic.
